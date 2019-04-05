@@ -16,34 +16,34 @@ $EndDescr
 $Comp
 L LED:NeoPixel_THT D1
 U 1 1 5CA76A79
-P 9100 1650
-F 0 "D1" H 9441 1696 50  0000 L CNN
-F 1 "NeoPixel_THT" H 9441 1605 50  0000 L CNN
-F 2 "LED_THT:LED_D5.0mm-4_RGB_Staggered_Pins" H 9150 1350 50  0001 L TNN
-F 3 "https://www.adafruit.com/product/1938" H 9200 1275 50  0001 L TNN
-	1    9100 1650
+P 4800 1900
+F 0 "D1" H 5141 1946 50  0000 L CNN
+F 1 "NeoPixel_THT" H 5141 1855 50  0000 L CNN
+F 2 "LED_THT:LED_D5.0mm-4_RGB_Staggered_Pins" H 4850 1600 50  0001 L TNN
+F 3 "https://www.adafruit.com/product/1938" H 4900 1525 50  0001 L TNN
+	1    4800 1900
 	1    0    0    -1  
 $EndComp
 $Comp
 L LED:NeoPixel_THT D2
 U 1 1 5CA76BB6
-P 9100 4250
-F 0 "D2" H 9441 4296 50  0000 L CNN
-F 1 "NeoPixel_THT" H 9441 4205 50  0000 L CNN
-F 2 "LED_THT:LED_D5.0mm-4_RGB_Staggered_Pins" H 9150 3950 50  0001 L TNN
-F 3 "https://www.adafruit.com/product/1938" H 9200 3875 50  0001 L TNN
-	1    9100 4250
-	1    0    0    1   
+P 5850 1900
+F 0 "D2" H 6191 1946 50  0000 L CNN
+F 1 "NeoPixel_THT" H 6191 1855 50  0000 L CNN
+F 2 "LED_THT:LED_D5.0mm-4_RGB_Staggered_Pins" H 5900 1600 50  0001 L TNN
+F 3 "https://www.adafruit.com/product/1938" H 5950 1525 50  0001 L TNN
+	1    5850 1900
+	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR01
 U 1 1 5CA76DB5
-P 9400 2750
-F 0 "#PWR01" H 9400 2500 50  0001 C CNN
-F 1 "GND" H 9405 2577 50  0000 C CNN
-F 2 "" H 9400 2750 50  0001 C CNN
-F 3 "" H 9400 2750 50  0001 C CNN
-	1    9400 2750
+P 4800 2200
+F 0 "#PWR01" H 4800 1950 50  0001 C CNN
+F 1 "GND" H 4805 2027 50  0000 C CNN
+F 2 "" H 4800 2200 50  0001 C CNN
+F 3 "" H 4800 2200 50  0001 C CNN
+	1    4800 2200
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -116,197 +116,26 @@ Text Label 5650 3950 1    50   ~ 0
 P0
 Text Label 5550 3950 1    50   ~ 0
 GND
-$Comp
-L Jumper:SolderJumper_3_Bridged12 JP1A1
-U 1 1 5CA7A80B
-P 8350 2500
-F 0 "JP1A1" H 8350 2705 50  0000 C CNN
-F 1 "SolderJumper_3_Bridged12" H 8350 2614 50  0000 C CNN
-F 2 "Jumper:SolderJumper-3_P1.3mm_Bridged12_RoundedPad1.0x1.5mm" H 8350 2500 50  0001 C CNN
-F 3 "~" H 8350 2500 50  0001 C CNN
-	1    8350 2500
-	1    0    0    -1  
-$EndComp
-$Comp
-L Jumper:SolderJumper_3_Bridged12 JP1B1
-U 1 1 5CA7A865
-P 9000 2500
-F 0 "JP1B1" H 9000 2705 50  0000 C CNN
-F 1 "SolderJumper_3_Bridged12" H 9000 2614 50  0000 C CNN
-F 2 "Jumper:SolderJumper-3_P1.3mm_Bridged12_RoundedPad1.0x1.5mm" H 9000 2500 50  0001 C CNN
-F 3 "~" H 9000 2500 50  0001 C CNN
-	1    9000 2500
-	1    0    0    -1  
-$EndComp
-$Comp
-L Jumper:SolderJumper_3_Bridged12 JP1C1
-U 1 1 5CA7A89F
-P 9550 2500
-F 0 "JP1C1" H 9550 2705 50  0000 C CNN
-F 1 "SolderJumper_3_Bridged12" H 9550 2614 50  0000 C CNN
-F 2 "Jumper:SolderJumper-3_P1.3mm_Bridged12_RoundedPad1.0x1.5mm" H 9550 2500 50  0001 C CNN
-F 3 "~" H 9550 2500 50  0001 C CNN
-	1    9550 2500
-	1    0    0    -1  
-$EndComp
-$Comp
-L Jumper:SolderJumper_3_Bridged12 JP1D1
-U 1 1 5CA7A8DF
-P 10200 2500
-F 0 "JP1D1" H 10200 2705 50  0000 C CNN
-F 1 "SolderJumper_3_Bridged12" H 10200 2614 50  0000 C CNN
-F 2 "Jumper:SolderJumper-3_P1.3mm_Bridged12_RoundedPad1.0x1.5mm" H 10200 2500 50  0001 C CNN
-F 3 "~" H 10200 2500 50  0001 C CNN
-	1    10200 2500
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	10000 2500 10000 1650
+	5100 1900 5550 1900
 Wire Wire Line
-	10000 1650 9400 1650
+	4800 2200 5850 2200
 Wire Wire Line
-	10400 2500 10400 1050
+	4800 1600 5850 1600
 Wire Wire Line
-	10400 1050 8800 1050
+	4500 1900 4050 1900
 Wire Wire Line
-	8800 1050 8800 1650
+	4800 1600 4050 1600
+Connection ~ 4800 1600
 Wire Wire Line
-	9350 2500 9350 1950
-Wire Wire Line
-	9750 2500 9750 1350
-Wire Wire Line
-	8800 2500 8800 1950
-Wire Wire Line
-	8800 1950 8550 1950
-Wire Wire Line
-	8550 1950 8550 1350
-Wire Wire Line
-	9200 2500 9200 1950
-Wire Wire Line
-	9100 1950 9200 1950
-Connection ~ 9200 1950
-Wire Wire Line
-	9200 1950 9350 1950
-Wire Wire Line
-	8150 2500 8150 1650
-Wire Wire Line
-	8150 1650 8800 1650
-Wire Wire Line
-	8550 2500 8550 2050
-Wire Wire Line
-	8550 2050 8400 2050
-Wire Wire Line
-	8400 2050 8400 1150
-Wire Wire Line
-	8400 1150 9400 1150
-Wire Wire Line
-	9400 1150 9400 1650
-$Comp
-L Jumper:SolderJumper_3_Bridged12 JP2A1
-U 1 1 5CA7E29B
-P 8350 3400
-F 0 "JP2A1" H 8350 3512 50  0000 C CNN
-F 1 "SolderJumper_3_Bridged12" H 8350 3603 50  0000 C CNN
-F 2 "Jumper:SolderJumper-3_P1.3mm_Bridged12_RoundedPad1.0x1.5mm" H 8350 3400 50  0001 C CNN
-F 3 "~" H 8350 3400 50  0001 C CNN
-	1    8350 3400
-	1    0    0    1   
-$EndComp
-$Comp
-L Jumper:SolderJumper_3_Bridged12 JP2B1
-U 1 1 5CA7E2A2
-P 9000 3400
-F 0 "JP2B1" H 9000 3512 50  0000 C CNN
-F 1 "SolderJumper_3_Bridged12" H 9000 3603 50  0000 C CNN
-F 2 "Jumper:SolderJumper-3_P1.3mm_Bridged12_RoundedPad1.0x1.5mm" H 9000 3400 50  0001 C CNN
-F 3 "~" H 9000 3400 50  0001 C CNN
-	1    9000 3400
-	1    0    0    1   
-$EndComp
-$Comp
-L Jumper:SolderJumper_3_Bridged12 JP2C1
-U 1 1 5CA7E2A9
-P 9550 3400
-F 0 "JP2C1" H 9550 3512 50  0000 C CNN
-F 1 "SolderJumper_3_Bridged12" H 9550 3603 50  0000 C CNN
-F 2 "Jumper:SolderJumper-3_P1.3mm_Bridged12_RoundedPad1.0x1.5mm" H 9550 3400 50  0001 C CNN
-F 3 "~" H 9550 3400 50  0001 C CNN
-	1    9550 3400
-	1    0    0    1   
-$EndComp
-Wire Wire Line
-	9350 3400 9350 3950
-Wire Wire Line
-	9750 3400 9750 4550
-Wire Wire Line
-	8800 3400 8800 3950
-Wire Wire Line
-	8800 3950 8550 3950
-Wire Wire Line
-	8550 3950 8550 4550
-Wire Wire Line
-	9200 3400 9200 3950
-Wire Wire Line
-	9100 3950 9200 3950
-Connection ~ 9200 3950
-Wire Wire Line
-	9200 3950 9350 3950
-Wire Wire Line
-	8150 3400 8150 4250
-Wire Wire Line
-	8150 4250 8800 4250
-Wire Wire Line
-	8550 3400 8550 3850
-Wire Wire Line
-	8550 3850 8400 3850
-Wire Wire Line
-	8400 3850 8400 4750
-Wire Wire Line
-	8400 4750 9400 4750
-Wire Wire Line
-	9400 4750 9400 4250
-Wire Wire Line
-	9000 3250 9000 2900
-Wire Wire Line
-	9550 3250 9550 2750
-Wire Wire Line
-	10200 2650 10200 3000
-Wire Wire Line
-	10200 3000 8350 3000
-Wire Wire Line
-	8350 3000 8350 3250
-Wire Wire Line
-	9000 2900 7950 2900
-Connection ~ 9000 2900
-Wire Wire Line
-	9000 2900 9000 2650
-Wire Wire Line
-	8350 3000 7950 3000
-Connection ~ 8350 3000
-Wire Wire Line
-	9550 2750 9400 2750
-Connection ~ 9550 2750
-Wire Wire Line
-	9550 2750 9550 2650
-Wire Wire Line
-	8550 1350 9100 1350
-Connection ~ 9400 1650
-Connection ~ 9100 1350
-Wire Wire Line
-	9100 1350 9750 1350
-Connection ~ 8800 1650
-Wire Wire Line
-	8550 4550 9100 4550
-Connection ~ 9100 4550
-Wire Wire Line
-	9100 4550 9750 4550
-Text Label 8000 2750 0    50   ~ 0
-GND
-Text Label 8000 2900 0    50   ~ 0
-P0
-Text Label 8000 3000 0    50   ~ 0
+	4800 2200 4050 2200
+Connection ~ 4800 2200
+Text Label 4100 1900 0    50   ~ 0
 P4
-Connection ~ 9400 2750
-Wire Wire Line
-	9400 2750 7950 2750
+Text Label 4100 2200 0    50   ~ 0
+GND
+Text Label 4100 1600 0    50   ~ 0
+P0
+Text Label 5300 1900 0    50   ~ 0
+DATA
 $EndSCHEMATC
