@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:StaringTurkey-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -33,17 +34,6 @@ F 1 "NeoPixel_THT" H 6191 1855 50  0000 L CNN
 F 2 "LED_THT:LED_D5.0mm-4_RGB_Staggered_Pins" H 5900 1600 50  0001 L TNN
 F 3 "https://www.adafruit.com/product/1938" H 5950 1525 50  0001 L TNN
 	1    5850 1900
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR01
-U 1 1 5CA76DB5
-P 4800 2200
-F 0 "#PWR01" H 4800 1950 50  0001 C CNN
-F 1 "GND" H 4805 2027 50  0000 C CNN
-F 2 "" H 4800 2200 50  0001 C CNN
-F 3 "" H 4800 2200 50  0001 C CNN
-	1    4800 2200
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -115,7 +105,7 @@ P2
 Text Label 5650 3950 1    50   ~ 0
 P0
 Text Label 5550 3950 1    50   ~ 0
-GND
+P1-GND
 Wire Wire Line
 	5100 1900 5550 1900
 Wire Wire Line
@@ -132,10 +122,12 @@ Wire Wire Line
 Connection ~ 4800 2200
 Text Label 4100 1900 0    50   ~ 0
 P4
-Text Label 4100 2200 0    50   ~ 0
-GND
 Text Label 4100 1600 0    50   ~ 0
+P1-GND
+Text Label 4100 2200 0    50   ~ 0
 P0
 Text Label 5300 1900 0    50   ~ 0
 DATA
+Text Notes 3900 1450 0    50   ~ 0
+Note: These AliExpress neopixels have GND/VCC reversed from usual!
 $EndSCHEMATC
