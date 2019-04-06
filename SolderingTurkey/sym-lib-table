@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name SparkFun_SchematicComponents)(type Legacy)(uri /home/cananian/Projects/Electronics/DigiSpark/KiCad/SparkFun_SchematicComponents.lib)(options "")(descr ""))
+)
