@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:SolderingTurkey-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -136,7 +137,7 @@ F 1 "LED_Dual_2pin" H 7400 2955 50  0000 C CNN
 F 2 "svg:LED_D5.0mm_FlatTop-BackSilkLine" H 7400 2650 50  0001 C CNN
 F 3 "~" H 7400 2650 50  0001 C CNN
 	1    7400 2650
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 Wire Wire Line
 	6950 2650 7050 2650
