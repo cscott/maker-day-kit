@@ -40,28 +40,41 @@ void setup() {
   delay(500);
   strip.begin();
   strip.show(); // Initialize all pixels to 'off'
-  strip.setPixelColor(0, strip.Color(255,0,0)); // RED
-  strip.show();
-  delay(1000);
   
 }
 
 void loop() {
-  /**/
-  // Some example procedures showing how to display to the pixels:
-  colorWipe(strip.Color(255, 0, 0), 50); // Red
-  colorWipe(strip.Color(0, 255, 0), 50); // Green
-  colorWipe(strip.Color(0, 0, 255), 50); // Blue
-//colorWipe(strip.Color(0, 0, 0, 255), 50); // White RGBW
-  // Send a theater pixel chase in...
-  theaterChase(strip.Color(127, 127, 127), 50); // White
-  theaterChase(strip.Color(127, 0, 0), 50); // Red
-  theaterChase(strip.Color(0, 0, 127), 50); // Blue
-  /**/
 
+  for (uint8_t i=0; i<20; i++) {
+    digitalWrite(2, i&1 ? HIGH : LOW);
+    digitalWrite(3, i&2 ? HIGH : LOW);
+    colorWipe(strip.Color(255, 0, 0), 50); // Red
+    colorWipe(strip.Color(0, 255, 0), 50); // Green
+    colorWipe(strip.Color(0, 0, 255), 50); // Blue
+  }
+  
+  digitalWrite(2, HIGH); digitalWrite(3, HIGH);
   rainbow(20);
-  rainbowCycle(20);
-  theaterChaseRainbow(50);
+  for (uint8_t i=0; i<20; i++) {
+    digitalWrite(2, i&1 ? HIGH : LOW);
+    digitalWrite(3, i&2 ? HIGH : LOW);
+    rainbow(1);
+  }
+
+  digitalWrite(2, HIGH); digitalWrite(3, HIGH);
+  rainbowCycle(40);
+  for (uint8_t i=0; i<5; i++) {
+    digitalWrite(2, i&1 ? HIGH : LOW);
+    digitalWrite(3, i&2 ? HIGH : LOW);
+    rainbowCycle(1);
+  }
+
+  digitalWrite(2, HIGH); digitalWrite(3, HIGH);
+  strip.setPixelColor(0, Wheel(random(255)));
+  strip.setPixelColor(1, Wheel(random(255)));
+  strip.show();
+  delay(5000);
+
 }
 
 // Fill the dots one after the other with a color
